@@ -12,4 +12,10 @@ function runMyLibrary() {
     Book.prototype.changeStatus = function() {
         this.status = this.status === "Not Read" ? "Read" : "Not Read";
     }
+
+    function addBookToLibrary(title, author, year, status, description) {
+        const book = new Book(title, author, year, status, description);
+        myLibrary.push(book);
+    }
+    
 }
