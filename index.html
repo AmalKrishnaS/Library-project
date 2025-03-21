@@ -13,7 +13,42 @@
     </header>
 
     <main class="main">
-        
+        <dialog class="dialog">
+            <form action="">
+                <div class="form-element">
+                    <label for="title">Title<span>*</span></label>
+                    <input name="title" id="title" type="text">
+                </div>
+
+                <div class="form-element">
+                    <label for="author">Author<span>*</span></label>
+                    <input name="author" id="author" type="text">
+                </div>
+
+                <div class="form-element">
+                    <label for="year">Year<span>*</span></label>
+                    <input name="year" id="year" type="number">
+                </div>
+
+                <div class="form-element">
+                    <label for="status">Status</label>
+                    <select name="status" id="status">
+                        <option value="read">Read</option>
+                        <option value="notRead">Not Read</option>
+                    </select>
+                </div>
+
+                <div class="form-element">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" type="text" rows="4"></textarea>
+                </div>
+
+                <div class="form-element">
+                    <button type="button" id="cancelButton" formmethod="dialog">Cancel</button>
+                    <button type="submit" id="submitButton">submit</button>
+                </div>
+            </form>
+        </dialog>
     </main>
 
     <script src="./script.js"></script>
