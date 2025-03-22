@@ -68,3 +68,11 @@ textarea {
 label {
     width: 100px;
 }
+
+.error-box {
+    margin-bottom: 15px;
+    background-color: red;
+    color: white;
+    padding: 4px;
+    font-size: .8em;
+}
