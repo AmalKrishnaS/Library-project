@@ -38,8 +38,8 @@ function runMyLibrary() {
             errors.push("Title, Author, Year shouldn't be empty");
         }
 
-        if (description.length > 60) {
-            errors.push("Description should be less than 60 characters");
+        if (description.length > 54) {
+            errors.push("Description should be less than 54 characters");
         }
 
         return errors;

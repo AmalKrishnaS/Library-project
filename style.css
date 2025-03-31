@@ -83,7 +83,7 @@ label {
 .book-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 10px;
     padding: 4px;
     background-color: bisque;
 }
@@ -116,4 +116,9 @@ label {
     border: 1px solid black;
     background-color: rgb(85, 0, 0);
     color: white;
+}
+
+.description {
+    overflow-wrap: break-word;
+    height: 60px;
 }
