@@ -129,7 +129,13 @@ function runMyLibrary() {
             }
         } 
         else if (event.target.classList.contains('book-delete-button')) {
-
+            const card = event.target.closest('.book-card');
+            const bookID = card.getAttribute('data-index-number');
+            let bookIndex = myLibrary.findIndex(book => book.id === bookID);
+            if (bookIndex !== -1) {
+                myLibrary.splice(bookIndex, 1);
+                card.remove();
+            }
         }
     });
 
