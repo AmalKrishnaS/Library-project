@@ -118,9 +118,7 @@ function runMyLibrary() {
     });
 
     main.addEventListener('click', (event) => {
-        console.log('click');
         if (event.target.classList.contains('change-status-button')) {
-            console.log('click');
             const card = event.target.closest('.book-card');
             const status = card.querySelector('.status-info-para');
             const bookID = card.getAttribute('data-index-number');
@@ -129,7 +127,10 @@ function runMyLibrary() {
                 currentBook.changeStatus();
                 status.textContent = currentBook.status;
             }
-        };
+        } 
+        else if (event.target.classList.contains('book-delete-button')) {
+
+        }
     });
 
     cancelButton.addEventListener("click", () => {
