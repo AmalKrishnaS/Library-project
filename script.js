@@ -1,17 +1,19 @@
 
     const myLibrary = [];
-    
-    function Book(title, author, year, status, description, id) {
-        this.title = title;
-        this.author = author;
-        this.year = year;
-        this.status = status;
-        this.description = description;
-        this.id = id;
-    }
 
-    Book.prototype.changeStatus = function() {
-        this.status = this.status === "Not Read" ? "Read" : "Not Read";
+    class Book {
+        constructor(title, author, year, status, description, id) {
+            this.title = title;
+            this.author = author;
+            this.year = year;
+            this.status = status;
+            this.description = description;
+            this.id = id;
+        }
+
+        changeStatus() {
+            this.status = this.status === "Not Read" ? "Read" : "Not Read";
+        }
     }
 
     function addBookToLibrary(title, author, year, status, description, id) {
