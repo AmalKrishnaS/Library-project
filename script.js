@@ -1,4 +1,4 @@
-function runMyLibrary() {
+
     const myLibrary = [];
     
     function Book(title, author, year, status, description, id) {
@@ -142,7 +142,3 @@ function runMyLibrary() {
     cancelButton.addEventListener("click", () => {
         formDialog.close();
     });
-
-}
-
-runMyLibrary();
